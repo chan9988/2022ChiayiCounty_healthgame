@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="en">
+<html prefix='og: http://ogp.me/ns#'>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150265105-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { window.dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-150265105-3');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MNCZ6ZX');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:locale" content="zh_TW">
+
+    <meta property="og:title" content="國民健康署-糖尿病抽獎活動">
+    <meta property="og:url" content="https://www.hpa2021wddevent.com.tw" />
+    <meta property="og:image" content="https://www.hpa2021wddevent.com.tw/img/web/meta/meta_1200x628_1.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="628" />
+    <meta property="og:site_name" content="國民健康署-糖尿病抽獎活動" />
+    <meta property="og:description" content="玩遊戲~抽200元全聯禮券">
+    <meta itemprop="url" content="https://www.hpa2021wddevent.com.tw" />
+    <meta itemprop="name" content="國民健康署-糖尿病抽獎活動" />
+    <meta itemprop="description" content="玩遊戲~抽200元全聯禮券">
+    <meta itemprop="image" content="https://www.hpa2021wddevent.com.tw/img/web/meta/meta_1200x628_1.jpg" />
+    <link rel="icon" href="https://www.hpa2021wddevent.com.tw/img/web_logo.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css?v=1021">
+    <title>衛生福利部-遠離糖尿病，要怎麼做？</title>
+    <style>
+        /* * {
+            -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+            user-select: none;
+        } */
+
+        * {
+            -webkit-user-select: text;
+            /* Chrome, Opera, Safari */
+            -moz-user-select: text;
+            /* Firefox 2+ */
+            -ms-user-select: text;
+            /* IE 10+ */
+            user-select: text;
+            /* Standard syntax */
+        }
+
+
+
+        * {
+            -webkit-user-select: text;
+            /* Chrome, Opera, Safari */
+            -moz-user-select: text;
+            /* Firefox 2+ */
+            -ms-user-select: text;
+            /* IE 10+ */
+            user-select: text;
+            /* Standard syntax */
+        }
+
+        body {
+            position: relative;
+
+        }
+
+        img {
+            display: block;
+        }
+
+        input {
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ::root {
+            --width: 440px;
+            --vheight: 76.5vh;
+            --sheight: 18px;
+        }
+
+        @media (max-width: 480px) {
+            :root {
+                --width: 100vw;
+                --vheight: 76.5vh;
+                --sheight: 0px;
+            }
+
+
+        }
+
+        @media (min-width: 481px) {
+            :root {
+                --width: 440px;
+                --vheight: 76.5vh;
+                --sheight: 18px;
+            }
+        }
+
+        .main {
+            position: relative;
+        }
+
+        .game_container {
+            /* height: var(--vheight); */
+            cursor: pointer;
+            display: block;
+        }
+
+        .game_container {
+            /* background: url("../img/web/1_section1_bg.png"); */
+            width: 100%;
+            height: calc(100vh - 158px);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .game_area {
+            width: 100%;
+            height: calc(100vh - 158px);
+            /* height: var(--vheight); */
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background: url("img/frame_bg.png");
+            background-size: contain;
+            display: none;
+            z-index: 1;
+        }
+
+        #game_lightbox {
+            width: 100%;
+            /* height: 100%; */
+            height: calc(100vh - 158px);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 5;
+        }
+
+        #game_rule {
+            width: 95%;
+            max-width: 440px;
+            /* max-width: var(--width); */
+            height: calc(440 / 874 * 922 + 50);
+            position: absolute;
+            top: 50%;
+
+            /* top: calc((100% - 440 / 874 * 922)) /2); */
+            /* left: calc((100vw - var(--width) - var(--sheight))/2); */
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #game_rule_bg {
+            /* max-width: var(--width); */
+            max-width: 440px;
+            height: 100%;
+        }
+
+        #game_rule_content {
+            width: calc(97% - 14px);
+            height: 90%;
+            position: absolute;
+            top: 0px;
+            left: 2.5%;
+            margin: 10px;
+            padding-top: 5px;
+            overflow-y: scroll;
+            z-index: 5;
+        }
+
+        /* chrome edge safari opera*/
+        .scroller::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        .scroller::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+            background-color: rgba(161, 205, 204, 1);
+        }
+
+        .scroller::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 1);
+            border-radius: 10px;
+        }
+
+        /*firefox*/
+        .scroller {
+            scrollbar-color: rgb(161, 205, 204) rgb(255, 255, 255);
+            scrollbar-width: thin;
+        }
+
+        #game_rule_text {
+            margin-bottom: 20px;
+        }
+
+        #start_game {
+            width: 50%;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+
+        #game_rule_hand {
+            width: 44px;
+            position: absolute;
+            bottom: 0px;
+            right: 20px;
+            margin: 10px;
+            z-index: 5;
+        }
+
+        #game_stage {
+            background-image: url('img/game_bg.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            max-width: 440px;
+            /* max-width: var(--width); */
+            background-position: top center;
+            /* height: 100%; */
+            height: calc(100vh - 158px);
+            /* position: absolute; */
+            position: relative;
+            /* z-index: 5; */
+            /* top: 0px; */
+            margin: auto;
+            overflow: hidden;
+            /* left: calc((100vw - var(--width) - var(--sheight))/2); */
+        }
+
+        #time {
+            width: 80px;
+            height: 36px;
+            position: absolute;
+            top: 22px;
+            left: 37px;
+            z-index: 1;
+            display: block;
+        }
+
+        #sumpoint {
+            /* width: 40px; */
+            height: 34px;
+            position: absolute;
+            top: 16px;
+            right: 22px;
+            color: #fff;
+            font-size: 26px;
+            font-weight: bold;
+            line-height: 34px;
+            text-align: center;
+            z-index: 1;
+            display: block;
+        }
+
+        #msg {
+            /* width: 384px; */
+            width: 90%;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            bottom: 37px;
+            /* left: 27px; */
+            z-index: 4;
+            display: none;
+        }
+
+        #point {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            z-index: 1;
+            display: none;
+        }
+
+        #explosion {
+            width: 70px;
+            height: 80px;
+            position: absolute;
+            z-index: 2;
+            display: none;
+        }
+
+        #footer {
+            /* width: 384px; */
+            width: calc(100% - 26px);
+            /* width: 100%; */
+            position: absolute;
+            /* bottom: 37px; */
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+            display: block;
+        }
+
+
+        .item {
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: -65px;
+            cursor: pointer;
+            z-index: 1;
+            display: none;
+            overflow: hidden;
+        }
+
+        @media (min-width:1100px) {
+            .item {
+                width: 85px;
+                /* background-color: blue; */
+            }
+        }
+
+
+
+        .item img {
+            width: 60px;
+            height: 60px;
+        }
+
+        /* #game_bg {
+            width: 30%;
+            max-width: 440px;
+            max-width: var(--width);
+            height: 100%;
+            position: absolute;
+            left: calc((100vw - var(--width) - var(--sheight))/2);
+        } */
+
+        #game_result {
+            width: 94%;
+            max-width: 440px;
+            /* max-width: var(--width); */
+            /* max-width:37 ; */
+            /* height: calc(var(--width) / 868 * 620); */
+            height: auto;
+            position: absolute;
+            top: 50%;
+            /* top: calc((100% - (var(--width) / 868 * 620))/2); */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* left: calc((100vw - var(--width) - var(--sheight))/2); */
+            display: none;
+        }
+
+        #game_result_content {
+            width: 80%;
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #7D3F3D;
+            font-family: "Microsoft JhengHei", "微軟正黑體", "STHeiti", "黑體", sans-serif;
+            font-weight: bold;
+            font-size: 80px;
+            /* line-height: normal; */
+            letter-spacing: 0px;
+            text-align: center;
+        }
+
+        .game_result_btn_container {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            bottom: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+        }
+
+        .game_result_btn_1 {
+            margin-right: 10px;
+        }
+
+        .game_result_btn {
+            width: 43%;
+            display: none;
+        }
+
+        #game_result_replay {
+            cursor: pointer;
+            display: none;
+        }
+
+        #game_result_fill {
+            display: none;
+            cursor: pointer;
+        }
+
+        #game_result_bg {
+            position: relative;
+        }
+
+        #game_form {
+            max-width: 440px;
+            background: url('img/game_form_bg.png');
+            border: 3px solid #000;
+            width: 90%;
+            border-radius: 13px;
+            /* height: 38vh; */
+            height: auto;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            padding-bottom: 30px;
+            transform: translate(-50%, -50%);
+            /* top: calc((100% - (var(--width) * 1.32 / 868 * 620))/2); */
+            /* left: calc((100vw - (var(--width) * 1.32) - var(--sheight))/2); */
+            display: none;
+            z-index: 10000;
+        }
+
+        .game_form_title_img {
+            width: 55%;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #game_form_bg {
+            position: relative;
+        }
+
+        #game_form_send {
+            width: 45%;
+            margin: auto;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        .form_where_option {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .game_form_container {
+            width: 90%;
+            /* position: absolute; */
+            /* left: 50%; */
+            /* transform: translateX(-50%); */
+            /* right: 0; */
+            margin: auto;
+            margin-top: 10px;
+        }
+
+        .game_form_item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 6px;
+            justify-content: center;
+        }
+
+        .game_form_item_4 {
+            align-items: flex-start;
+        }
+
+
+
+        .game_form_container div input {
+            width: 300px;
+        }
+
+        .game_form_img {
+            width: 20%;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .game_form_img_3 {
+            width: 50%;
+            letter-spacing: 1px
+        }
+
+        .game_form_content {
+            width: 78%;
+        }
+
+        .game_form_content_3 {
+            width: 50%;
+            margin-left: 10px;
+        }
+
+        #game_form input,
+        select {
+            /* display: block; */
+            width: 100%;
+            /* position: absolute; */
+            height: 32px;
+            left: 28%;
+            color: #000;
+            font-family: "Microsoft JhengHei", "微軟正黑體", "STHeiti", "黑體", sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: normal;
+            letter-spacing: 0px;
+            text-align: center;
+            border-radius: 5px;
+            background: #C0E1E1;
+            border: 2px solid #3897A9;
+        }
+
+        #game_form_address select {
+            margin-bottom: 5px;
+            width: 49.5%;
+        }
+
+        #game_form .form_where_option input {
+            width: 0;
+            height: 0;
+        }
+
+
+        /* * {
+            outline: #3897A9 1px solid;
+        } */
+
+        #city {
+            margin-right: 1%;
+        }
+
+        .game_main_container {
+            display: flex;
+        }
+
+        header {
+            position: relative;
+            height: 80px;
+        }
+
+
+
+
+
+
+        @media (max-width:420px) {
+            header {
+                height: 65px;
+            }
+
+            #game_form input,
+            select {
+                height: 28px;
+                margin-bottom: 5px;
+                font-size: 18px;
+            }
+
+            .game_form_container {
+                width: 100%;
+            }
+
+            .game_form_content {
+                width: 60%;
+            }
+
+            .game_form_content_3 {
+                width: 55%;
+                margin-left: 20px;
+            }
+
+            .form_where_option {
+                margin-bottom: 5px;
+            }
+
+            .game_form_img {
+                width: 25%;
+            }
+
+            #sumpoint {
+                font-size: 20px;
+            }
+
+            #footer {
+                width: 100%;
+            }
+
+        }
+
+        /* @media screen and (min-width:320px) and (max-width:325px) {
+            #time {
+                left: 30px;
+            }
+
+            #sumpoint {
+                right: 20px
+            }
+        } */
+
+        /* @media screen and (min-width:374px) and (max-width:378px) {
+            #time {
+                left: 30px;
+            }
+
+            #sumpoint {
+                right: 20px
+            }
+        } */
+
+        @media screen and (max-height:568px) {
+
+
+            #game_result_content {
+                font-size: 60px;
+            }
+        }
+
+
+        #game_form_name input {
+            top: 21%;
+        }
+
+        #game_form_tel input {
+            top: 35%;
+        }
+
+        #city {
+            width: 30.5%;
+            top: 49%;
+            left: 28%;
+        }
+
+        #zone {
+            width: 30.5%;
+            top: 49%;
+            left: 59%;
+        }
+
+        #game_form_address input {
+            top: 61%;
+        }
+
+        #game_final {
+            width: 90%;
+            max-width: 440px;
+            /* height: calc(var(--width) / 868 * 620); */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* top: calc((100% - (var(--width) / 868 * 620))/2); */
+            /* left: calc((100vw - var(--width) - var(--sheight))/2); */
+            display: none;
+        }
+
+        #game_final_lazybag {
+            width: 35%;
+            position: absolute;
+            bottom: 25%;
+            left: 13%;
+            cursor: pointer;
+            display: block;
+        }
+
+        #game_final_share {
+            width: 35%;
+            position: absolute;
+            bottom: 25%;
+            right: 13%;
+            cursor: pointer;
+            display: block;
+        }
+
+        @media (min-width:420px) {
+            .game_form_title_img {
+                width: 46%;
+                margin-top: 15px;
+            }
+
+            /* .game_form_img {
+                width: 10%;
+            } */
+
+            .game_form_item {
+                margin-bottom: 10px;
+            }
+
+            .game_form_item input {
+                height: 40px;
+            }
+        }
+
+        @media (min-width:420px) and (max-width:600px) {
+            #game_result {
+                width: 90%;
+                max-width: 440px;
+            }
+        }
+
+        .logo {
+            width: 27%;
+            max-width: 100px;
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        #home {
+            width: 10%;
+            left: 90%;
+            right: 15px;
+            cursor: pointer;
+            max-width: 42px;
+        }
+
+
+        @media (min-width:720px) {
+            .logo {
+                width: 9%;
+            }
+
+            #game_form {
+                width: 80%;
+            }
+        }
+
+        @media screen and (min-width:319px) and (max-width:325px) {
+            .item {
+                width: 60px;
+                height: 60px;
+            }
+
+            #game_lightbox {
+                height: calc(100vh - 140px)
+            }
+
+            #game_stage {
+                height: calc(100vh - 140px)
+            }
+
+        }
+
+        @media screen and (min-height:892px) {
+            #game_stage {
+                height: 76vh;
+                background-size: cover;
+                background-position: center center;
+                margin-top: 5vh
+            }
+
+            #footer {
+                bottom: 22px;
+            }
+        }
+
+        @media screen and (min-height:1012px) {
+            #game_stage {
+                height: 68vh;
+            }
+        }
+
+        @media screen and (min-height:1100px) {
+            #game_stage {
+                height: 65vh;
+                margin-top: 6vh;
+            }
+        }
+
+        @media screen and (min-height:1020px) {
+            #game_stage {
+                margin-top: 12vh;
+            }
+        }
+
+
+        @media screen and (min-height:1120px) {
+            #game_stage {
+                height: 72vh;
+                margin-top: 10vh;
+                max-width: 60%;
+            }
+        }
+
+
+        footer {
+            width: 100%;
+            height: 78px;
+            background-color: #fffcdd;
+            /* position: relative; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer_line {
+            width: 2px;
+            height: 40%;
+            background-color: rgb(85, 84, 84);
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        .footer_des_1 {
+            margin-right: 10px;
+            font-size: 12px;
+            padding-top: 8px;
+            color: rgb(61, 61, 61);
+        }
+
+        .footer_img {
+            width: 32%;
+        }
+
+        .footer_des p {
+            line-height: 1.4;
+            color: rgb(61, 61, 61);
+        }
+
+        @media screen and (max-width: 768px) {
+            .rule_content p {
+                line-height: 1.4;
+                font-size: 14px;
+            }
+        }
+
+
+        @media (max-width: 420px) {
+            header li {
+                width: 29%;
+            }
+
+            footer {
+                flex-wrap: wrap;
+                /* height: 90px; */
+                padding-bottom: 10px;
+                /* box-sizing: border-box; */
+            }
+
+            .footer_line {
+                display: none;
+            }
+
+            .footer_des_1 {
+                width: 100%;
+                text-align: center;
+            }
+
+            .footer_img {
+                width: 70%;
+            }
+
+            .footer_des {
+                text-align: center;
+                font-size: 9px;
+                /* line-height: 1.6; */
+                margin-top: -2px;
+            }
+
+            .footer_des p {
+                line-height: 1.4;
+            }
+        }
+
+        /* 手機警示跳窗css */
+
+        .overlay-landscape-modal-mobile {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-image: url('img/game_form_bg.png');
+            display: none;
+            z-index: 11;
+            position: relative;
+            background-color: #fff;
+        }
+
+        .attention {
+            width: 80%;
+            margin: auto;
+            font-size: 20px;
+            line-height: 1.4;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+
+
+        @media screen and (orientation:portrait) {
+            .overlay-landscape-modal-mobile.overlay-landscape {
+                display: none;
+            }
+        }
+
+        .ad_option_label {
+            position: relative;
+            padding-left: -8px;
+        }
+
+        input[type="radio"] {
+            visibility: hidden;
+        }
+
+        .ad_option_circle {
+            height: 1rem;
+            width: 1rem;
+            border: 1px solid #6c6e70;
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            left: -20px;
+            top: 0;
+        }
+
+        .ad_option_circle::after {
+            content: "";
+            display: block;
+            height: 0.5rem;
+            width: 0.5rem;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #0c5c87;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        input[type="radio"]:checked~.ad_option_label .ad_option_circle::after {
+            /* 選中radio時 才顯示中間點點 */
+            opacity: 1;
+        }
+
+        .close_btn {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 30px;
+            z-index: 1;
+            cursor: pointer;
+        }
+
+        .close_btn.position {
+            right: 8px;
+            top: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNCZ6ZX" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- 手機旋轉警示跳窗 -->
+    <div class="overlay-landscape-modal-mobile" role="document">
+        <div class="attention">
+            為確保功能正常，且讓您有最好的使用體驗，請將您的螢幕旋轉為直向，謝謝！
+        </div>
+    </div>
+
+    <div class="overlay-landscape"></div>
+    <!-- 以上為手機旋轉警示跳窗 -->
+    <div id="all">
+
+
+        <div class="line"></div>
+        <header>
+            <div class="logo" id="logo">
+                <img src="img/web/header_logo.png" alt="">
+            </div>
+            <div class="logo home" id="home">
+                <img src="img/web/home_icon.png" alt="">
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="game_container"></div>
+            <div class="game_area">
+                <!-- LightBox 區塊-->
+                <div id="game_lightbox">
+                    <!-- 顯示規則 -->
+                    <div id="game_rule">
+                        <div id="game_rule_bg"><img src="img/start_frame.png"></div>
+                        <div id="game_rule_content" class="scroller">
+                            <div id="game_rule_text"><img src="img/start_text.png"></div>
+                            <div id="start_game"><img src="img/start_button.png"></div>
+                        </div>
+                        <div id="game_rule_hand"><img src="img/hand.gif"></div>
+                    </div>
+                    <!-- 遊戲結果 -->
+                    <div id="game_result">
+                        <div class="close_btn" id="close_btn">
+                            <img src="img/close_btn.svg" alt="">
+                        </div>
+                        <div id="game_result_bg">
+                            <img src="img/1_pass_frame.png">
+                            <div id="game_result_content"></div>
+                            <div class="game_result_btn_container">
+                                <div id="game_result_replay" class="game_result_btn game_result_btn_1"><img
+                                        src="img/1&2_again_button.png">
+                                </div>
+                                <div id="game_result_fail_replay" class="game_result_btn game_result_btn_1"><img
+                                        src="img/1&2_again_button.png">
+                                </div>
+                                <div id="game_result_fill" class="game_result_btn "><img src="img/1_pass_fillin.png">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- 填寫表單 -->
+                    <div id="game_form">
+                        <div id="game_form_bg">
+                            <div class="game_form_title_img">
+                                <img src="img/game_form_title.png" alt="">
+                            </div>
+
+                            <div class="game_form_container">
+                                <div class="game_form_item">
+                                    <div class="game_form_img">
+                                        姓名：
+                                    </div>
+                                    <div id="game_form_name" class="game_form_content">
+                                        <input type="text" id="name" name="name" class="form_option_item"
+                                            placeholder="請輸入中獎聯絡人">
+                                    </div>
+                                </div>
+                                <div class="game_form_item">
+                                    <div class="game_form_img">
+                                        手機：
+                                    </div>
+                                    <div id="game_form_tel" class="game_form_content">
+                                        <input type="text" id="mobile" name="mobile" inputmode="tel"
+                                            placeholder="請輸入中獎人行動電話" class="form_option_item" maxlength="10">
+                                    </div>
+                                </div>
+                                <div class="game_form_item game_form_item_3">
+                                    <div class="game_form_img ">
+                                        戶籍地：
+                                    </div>
+                                    <div id="game_form_address" class="game_form_content">
+                                        <select id="city" name="city" class="form_option_item">
+                                            <option value="">請選擇</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="game_form_item game_form_item_4">
+                                    <div class="game_form_img game_form_img_3">
+                                        從哪得知本活動訊息：
+                                    </div>
+                                    <div class="game_form_content game_form_content_3">
+                                        <div class="form_where_option">
+                                            <input type="radio" name="where" id="fb_option" value="國健署Facebook貼文">
+                                            <label for="fb_option" class="ad_option_label">
+                                                <span class="ad_option_circle"></span>
+                                                國健署Facebook貼文</label>
+                                        </div>
+                                        <div class="form_where_option">
+                                            <input type="radio" value="地方縣政府衛福部" name="where" id="county_option">
+                                            <label for="county_option" class="ad_option_label">
+                                                <span class="ad_option_circle"></span>
+                                                縣市衛生局</label>
+                                        </div>
+                                        <div class="form_where_option">
+                                            <input type="radio" name="where" id="ad_option" value="廣告" checked>
+                                            <label for="ad_option" class="ad_option_label">
+                                                <span class="ad_option_circle"></span>
+                                                廣告
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div id="game_form_send"><img src="img/3_send_button.png"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- 懶人包、分享 -->
+                    <div id="game_final">
+                        <div class="close_btn position" id="close_btn_final">
+                            <img src="img/close_btn.svg" alt="">
+                        </div>
+                        <div id="game_final_bg"><img src="img/4_done.png"></div>
+                        <div id="game_final_lazybag"><img src="img/4_page_button.png"></div>
+                        <div id="game_final_share"><img src="img/4_share_button.png"></div>
+                    </div>
+
+                </div>
+                <!-- 遊戲本體 -->
+                <div id="game_stage">
+
+                    <div id="time"><img src="img/15s.png"></div>
+                    <div id="sumpoint">0</div>
+                    <div id="msg"><img src="img/slogan1.png"></div>
+                    <div id="explosion"><img src="img/explosion.png"></div>
+                    <div id="point"><img src="img/score.png"></div>
+                    <div id="footer"><img src="img/game_front.png"></div>
+                </div>
+                <!-- 遊戲背景-->
+
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer_des_1">Copyright©</div>
+            <div class="footer_img">
+                <img src="img/web/footer.png" alt="">
+            </div>
+            <div class="footer_line"></div>
+            <div class="footer_des">
+                <p>http://www.hpa.gov.tw</p>
+                <p>本經費由菸品健康福利捐支應 廣告</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+
+        // 手機旋轉警示程式碼
+        if (!(/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) && !(/(Android)/i.test(navigator.userAgent))) {
+            // console.log('桌機');
+
+        } else {
+            $(window).on("orientationchange", function (event) {
+                if (window.orientation == 0) {
+                    $('.overlay-landscape-modal-mobile').css('display', 'none');
+                    $('#all').css('display', 'unset');
+                }
+                else {
+                    $('.overlay-landscape-modal-mobile').css('display', 'block');
+                    $('#all').css('display', 'none');
+                }
+            });
+        }
+
+        var total = 0,
+            sec = 15,
+            stopInterval, itemArray = [];
+        var maxItem = 17,
+            fallTime = 5000,
+            fallOpacity = 0.25;
+        var cityArray = ["基隆市", "台北市", "新北市", "桃園市", "新竹市", "新竹縣", "苗栗縣", "台中市", "彰化縣", "南投縣", "雲林縣", "嘉義市", "嘉義縣", "台南市", "高雄市", "屏東縣", "台東縣", "花蓮縣", "宜蘭縣", "澎湖縣", "金門縣", "連江縣"];
+        var zoneArray = [["仁愛區", "信義區", "中正區", "中山區", "安樂區", "暖暖區", "七堵區"], ["中正區", "大同區", "中山區", "松山區", "大安區", "萬華區", "信義區", "士林區", "北投區", "內湖區", "南港區", "文山區"], ["萬里區", "金山區", "板橋區", "汐止區", "深坑區", "石碇區", "瑞芳區", "平溪區", "雙溪區", "貢寮區", "新店區", "坪林區", "烏來區", "永和區", "中和區", "土城區", "三峽區", "樹林區", "鶯歌區", "三重區", "新莊區", "泰山區", "林口區", "蘆洲區", "五股區", "八里區", "淡水區", "三芝區", "石門區"], ["中壢區", "平鎮區", "龍潭區", "楊梅區", "新屋區", "觀音區", "桃園區", "龜山區", "八德區", "大溪區", "復興區", "大園區", "蘆竹區"], ["東區", "北區", "香山區"], ["竹北市", "湖口鄉", "新豐鄉", "新埔鎮", "關西鎮", "芎林鄉", "寶山鄉", "竹東鎮", "五峰鄉", "橫山鄉", "尖石鄉", "北埔鄉", "峨眉鄉"], ["竹南鎮", "頭份市", "三灣鄉", "南庄鄉", "獅潭鄉", "後龍鎮", "通霄鎮", "苑裡鎮", "苗栗市", "造橋鄉", "頭屋鄉", "公館鄉", "大湖鄉", "泰安鄉", "銅鑼鄉", "三義鄉", "西湖鄉", "卓蘭鎮"], ["中區", "東區", "南區", "西區", "北區", "北屯區", "西屯區", "南屯區", "太平區", "大里區", "霧峰區", "烏日區", "豐原區", "后里區", "石岡區", "東勢區", "和平區", "新社區", "潭子區", "大雅區", "神岡區", "大肚區", "沙鹿區", "龍井區", "梧棲區", "清水區", "大甲區", "外埔區", "大安區"], ["彰化市", "芬園鄉", "花壇鄉", "秀水鄉", "鹿港鎮", "福興鄉", "線西鄉", "和美鎮", "伸港鄉", "員林市", "社頭鄉", "永靖鄉", "埔心鄉", "溪湖鎮", "大村鄉", "埔鹽鄉", "田中鎮", "北斗鎮", "田尾鄉", "埤頭鄉", "溪州鄉", "竹塘鄉", "二林鎮", "大城鄉", "芳苑鄉", "二水鄉"], ["南投市", "中寮鄉", "草屯鎮", "國姓鄉", "埔里鎮", "仁愛鄉", "名間鄉", "集集鎮", "水里鄉", "魚池鄉", "信義鄉", "竹山鎮", "鹿谷鄉"], ["斗南鎮", "大埤鄉", "虎尾鎮", "土庫鎮", "褒忠鄉", "東勢鄉", "台西鄉", "崙背鄉", "麥寮鄉", "斗六市", "林內鄉", "古坑鄉", "莿桐鄉", "西螺鎮", "二崙鄉", "北港鎮", "水林鄉", "口湖鄉", "四湖鄉", "元長鄉"], ["東區", "西區"], ["番路鄉", "梅山鄉", "竹崎鄉", "阿里山鄉", "中埔鄉", "大埔鄉", "水上鄉", "鹿草鄉", "太保市", "朴子市", "東石鄉", "六腳鄉", "新港鄉", "民雄鄉", "大林鎮", "溪口鄉", "義竹鄉", "布袋鎮"], ["中西區", "東區", "南區", "北區", "安平區", "安南區", "永康區", "歸仁區", "新化區", "左鎮區", "玉井區", "楠西區", "南化區", "仁德區", "關廟區", "龍崎區", "官田區", "麻豆區", "佳里區", "西港區", "七股區", "將軍區", "學甲區", "北門區", "新營區", "後壁區", "白河區", "東山區", "六甲區", "下營區", "柳營區", "鹽水區", "善化區", "大內區", "山上區", "新市區", "安定區"], ["新興區", "前金區", "苓雅區", "鹽埕區", "鼓山區", "旗津區", "前鎮區", "三民區", "楠梓區", "小港區", "左營區", "仁武區", "大社區", "東沙群島", "南沙群島", "岡山區", "路竹區", "阿蓮區", "田寮區", "燕巢區", "橋頭區", "梓官區", "彌陀區", "永安區", "湖內區", "鳳山區", "大寮區", "林園區", "鳥松區", "大樹區", "旗山區", "美濃區", "六龜區", "內門區", "杉林區", "甲仙區", "桃源區", "那瑪夏區", "茂林區", "茄萣區"], ["屏東市", "三地門鄉", "霧台鄉", "瑪家鄉", "九如鄉", "里港鄉", "高樹鄉", "鹽埔鄉", "長治鄉", "麟洛鄉", "竹田鄉", "內埔鄉", "萬丹鄉", "潮州鎮", "泰武鄉", "來義鄉", "萬巒鄉", "崁頂鄉", "新埤鄉", "南州鄉", "林邊鄉", "東港鎮", "琉球鄉", "佳冬鄉", "新園鄉", "枋寮鄉", "枋山鄉", "春日鄉", "獅子鄉", "車城鄉", "牡丹鄉", "恆春鎮", "滿州鄉"], ["台東市", "綠島鄉", "蘭嶼鄉", "延平鄉", "卑南鄉", "鹿野鄉", "關山鎮", "海端鄉", "池上鄉", "東河鄉", "成功鎮", "長濱鄉", "太麻里鄉", "金峰鄉", "大武鄉", "達仁鄉"], ["花蓮市", "新城鄉", "秀林鄉", "吉安鄉", "壽豐鄉", "鳳林鎮", "光復鄉", "豐濱鄉", "瑞穗鄉", "萬榮鄉", "玉里鎮", "卓溪鄉", "富里鄉"], ["宜蘭市", "頭城鎮", "礁溪鄉", "壯圍鄉", "員山鄉", "羅東鎮", "三星鄉", "大同鄉", "五結鄉", "冬山鄉", "蘇澳鎮", "南澳鄉", "釣魚臺"], ["馬公市", "西嶼鄉", "望安鄉", "七美鄉", "白沙鄉", "湖西鄉"], ["金沙鎮", "金湖鎮", "金寧鄉", "金城鎮", "烈嶼鄉", "烏坵鄉"], ["南竿鄉", "北竿鄉", "莒光鄉", "東引鄉"]];
+
+        $(document).ready(function () {
+            showGame();
+
+            $('.form_option_item').on('blur', validForm);
+            $('#close_btn').on('click', backToIndex);
+            $('#close_btn_final').on('click', backToIndex);
+        })
+
+        function backToIndex() {
+            window.location.href = "https://www.hpa2021wddevent.com.tw";
+        }
+
+        $('#game_final_lazybag').on('click', function () {
+            window.location.href = 'lazy.html';
+        })
+
+        $("#start_game").on("click", startGame);
+        $('#logo').on('click', function () {
+            window.location.href = 'index.html';
+        })
+        $('#home').on('click', function () {
+            window.location.href = 'index.html';
+        })
+
+        cityArray.forEach(function (v, i) {
+            $("#city").append("<option value='" + i + "'>" + v + "</option>");
+        });
+
+        $("#city").on("change", showOption);
+
+        function showOption() {
+            $("#zone").empty();
+            $("#zone").append("<option value=''>請選擇</option>");
+            if ($("#city").val() != "") {
+                zoneArray[$("#city").val()].forEach(function (v, i) {
+                    $("#zone").append("<option value='" + i + "'>" + v + "</option>");
+                });
+            }
+        }
+
+        function showGame() {
+            // $("#game_lightbox").fadeOut(200);
+            $("#game_rule").css("display", "block");
+            $(".game_area").fadeIn(200);
+            $(".rule_container").css("display", "none");
+        }
+
+        function startGame() {
+            $("#game_lightbox").fadeOut(200);
+            setTimeout(function () {
+                createItem();
+                stopInterval = setInterval(playGame, 1000);
+            }, 700);
+
+        }
+
+
+
+
+        function checkIsIEBrowser() {
+            var userAgent = window.navigator.userAgent;
+            console.log('checkIsIEBrowser', userAgent)
+            var isIE = (userAgent.indexOf('MSIE') > 0) || (userAgent.indexOf('Trident/') > 0);
+            // var isEdge = userAgent.indexOf('Edge/') > 0;
+            console.log('isIe', isIE);
+            return isIE
+        }
+
+        function createItem() {
+            let itemSet = [
+                { img: "badminton.png", point: 30, msg: "" },
+                { img: "brocoli.png", point: 30, msg: "" },
+                { img: "doctor.png", point: 30, msg: "" },
+                { img: "dumbbel.png", point: 30, msg: "" },
+                { img: "fish.png", point: 30, msg: "" },
+                { img: "machine.png", point: 30, msg: "" },
+                { img: "sugur.png", point: -10, msg: "slogan1.png" },
+                { img: "tea.png", point: -10, msg: "slogan1.png" },
+                { img: "winesmoke.png", point: -10, msg: "slogan2.png" }
+            ];
+
+            for (let i = 0; i < maxItem; i++) {
+                // Math.floor(Math.random() * (max - min + 1)) + min
+                // 產生0-8的亂數：隨機取itemSet的其中一個內容丟進itemArray
+                let randomIndex = Math.floor(Math.random() * 9);
+                itemArray.push(itemSet[randomIndex])
+            }
+
+            itemArray.forEach(function (v, i) {
+
+
+                let item, leftPoint;
+                // 取得裝置寬度 扣掉線條左右gap 扣掉圖片寬度
+                let windowWidth = $(window).width();
+                let max, min;
+
+                if (windowWidth < 415) {
+                    // 最大值：裝置寬度-右邊線條邊框寬度-圖片寬度
+                    max = windowWidth - 10 - 60;
+                    min = 0 + 10
+                    // 取得max ～ min區間亂數
+                    // leftPoint = Math.floor(Math.random() * (max - min + 1)) + min;
+                } else {
+                    // pc時圖片邊框寬度較寬：15
+                    max = 440 - 15 - 60;
+                    min = 0 + 15;
+                    // leftPoint = Math.floor(Math.random() * 325) + 15;
+                    // leftPoint = Math.floor(Math.random() * 440) - 90;
+                }
+                leftPoint = Math.floor(Math.random() * (max - min + 1)) + min;
+                // console.log('leftPoint', leftPoint);
+                // leftPoint = Math.floor(Math.random() * 325);
+                item = "<div class='item' data-point='" + v.point + "' data-msg='" + v.msg + "'><img src='img/" + v.img + "'></div>";
+                $("#game_stage").append(item);
+                $(".item").eq(i).css({ "left": leftPoint + "px" });
+                setTimeout(function () {
+                    $(".item").eq(i).css("top", "75px").fadeIn(200).animate({
+                        top: ($('#footer').position().top) + 56 + "px", "opacity": fallOpacity
+                        // top: ($("#game_stage").height() - 65) + "px", "opacity": fallOpacity
+                    }, fallTime);
+                }, 800 * i);
+            });
+
+            $(".item").on("click", function () {
+                let point = $(this).data("point"),
+                    msg = $(this).data("msg"),
+                    top = $(this).css("top"),
+                    left = $(this).css("left");
+
+                total = total + point;
+
+                if (point > 0) {
+                    $("#point>img").attr("src", "img/score.png");
+                } else {
+                    $("#explosion").css({ "top": top, "left": left }).fadeIn(0).fadeOut(500);
+                    $("#point>img").attr("src", "img/deduction.png");
+                }
+
+                $("#point").css({ "top": top, "left": left }).fadeIn(0).animate({ "top": (parseInt(top, 10) - 30) }, 200).fadeOut(200);
+
+                if (msg != "") {
+                    $("#msg>img").attr("src", "img/" + msg);
+                    $("#msg").fadeIn(500).fadeOut(500);
+                }
+
+                $("#sumpoint").text(total);
+                $(this).stop(true, false).fadeOut(0);
+
+            });
+        }
+
+        function playGame() {
+            let msg;
+            sec--;
+
+            if (sec <= 0) {
+                clearInterval(stopInterval);
+                $(".item").stop(true, false).off("click").fadeOut(1000);
+                if (total >= 100) {
+                    // $('#game_result_bg').css('background-image', "img/1_pass_frame.png");
+                    $("#game_result_bg>img").attr("src", "img/1_pass_frame.png");
+                    $("#game_result_replay").css({ "display": "block" });
+                    $("#game_result_fill").css("display", "block");
+                    $("#game_result_fail_replay").css("display", "none");
+                } else {
+                    $("#game_result_bg>img").attr("src", "img/2_fail_frame.png");
+                    // $('#game_result_bg').css('background-image', "img/2_fail_frame.png");
+                    // $("#game_result_replay").css({ "display": "block", "margin-right": "0px" });
+                    $('#game_result_fail_replay').css({ "display": "block", "margin-right": "0px" })
+                    $("#game_result_fill").css("display", "none");
+                }
+                $("#game_result_replay").one("click", replayGame);
+                $('#game_result_fail_replay').one("click", replayGame);
+                $("#game_result_fill").one("click", formFill);
+
+                $("#game_result_content").text(total + " 分");
+                $("#game_rule").css("display", "none");
+                $("#game_form").css("display", "none");
+                $("#game_final").css("display", "none");
+                $("#game_result").css("display", "block");
+                $("#game_lightbox").fadeIn(200);
+            }
+            $("#time>img").attr("src", "img/" + sec + "s.png");
+        }
+
+        function replayGame() {
+            resetGame();
+            showGame();
+        }
+
+        function formFill() {
+            resetGame();
+            showForm();
+        }
+
+        function resetGame() {
+            clearInterval(stopInterval);
+            total = 0;
+            sec = 15;
+            itemArray.length = 0;
+            $(".item").remove();
+            $("#game_result_replay").css({ "display": "none", "width": "43%", "margin-right": "10px" });
+            $("#game_result_fill").css("display", "none");
+            $("#game_result_content").text("");
+            $("#time>img").attr("src", "img/15s.png");
+            $("#game_result_replay").off("click");
+
+            $("#game_result_fill").off("click");
+            $("#game_rule_content").scrollTop(0);
+            $("#game_result").css("display", "none");
+            $("#game_form").css("display", "none");
+            $("#game_final").css("display", "none");
+        }
+
+        function showForm() {
+            $("#game_form").css("display", "block");
+            $("#game_form_send").css({ "display": "block" });
+            $("#game_form_send").on("click", formSend);
+        }
+
+        function validForm() {
+            // console.log('blur');
+            var type = $(this).attr('name');
+            // console.log('type', type);
+            var is_error = false;
+            switch (type) {
+                case 'name':
+                    if ($("#name").val() == "" || $("#name").val().length < 2) {
+                        $("#name").css("background", "#7D3F3D");
+                        is_error = true;
+                        // return is_error
+                    }
+                    else {
+                        $('#name').css("background", "#C0E1E1")
+                    }
+                    // console.log('name in')
+                    break
+                case 'mobile':
+                    if ($("#mobile").val() == "" ||
+                        $("#mobile").val().length < 10 ||
+                        !$("#mobile").val().match(/^09\d{8}/)) {
+                        $("#mobile").css("background", "#7D3F3D");
+                        is_error = true;
+                        // return is_error
+                    }
+                    else {
+                        $('#mobile').css("background", "#C0E1E1")
+                    }
+                    console.log('mobile in')
+                    break
+                case 'city':
+                    if ($("#city").val() == "") {
+                        $("#city").css("background", "#7D3F3D");
+                        is_error = true;
+                        // return is_error
+                    }
+                    else {
+                        $("#city").css("background", "#C0E1E1");
+                    }
+
+            }
+        }
+
+        function formSend() {
+            var is_error = false;
+            $("#name").val($("#name").val().replace(/'- /g, ""));
+            $("#mobile").val($("#mobile").val().replace(/'- /g, ""));
+            // $("#address").val($("#address").val().replace(/'- /g, ""));
+            if ($("#name").val() == "" || $("#name").val().length < 2) {
+                $("#name").css("background", "#7D3F3D");
+                is_error = true;
+            }
+
+            if ($("#mobile").val() == "" || $("#mobile").val().length < 10 || !$("#mobile").val().match(/^09\d{8}/)) {
+                $("#mobile").css("background", "#7D3F3D");
+                is_error = true;
+            }
+
+            if ($("#city").val() == "") {
+                $("#city").css("background", "#7D3F3D");
+                is_error = true;
+            }
+
+            // if ($("#zone").val() == "") {
+            //     $("#zone").css("background", "#7D3F3D");
+            //     is_error = true;
+            // }
+
+            // if ($("#address").val() == "" || $("#address").val().length < 2) {
+            //     $("#address").css("background", "#7D3F3D");
+            //     is_error = true;
+            // }
+
+            if (!is_error) {
+                let name = $('#name').val(),
+                    mobile = $('#mobile').val(),
+                    address = $("#city").find("option:selected").text(),
+                    infoResource;
+                infoResource = $('input[name = "where"]:checked').val();
+
+                $.ajax({
+                    type: "POST",
+                    async: false,
+                    dataType: "jsonp",
+                    url: "https://www.sales-frontier.com/adform/hpa2021wddevent/action1.php",
+                    data: {
+                        "name": name,
+                        "address": address,
+                        "mobile": mobile,
+                        "infoResource": infoResource
+
+                    },
+                    jsonp: "mycallback",
+                    jsonpCallback: "result",
+                    success: function (data) {
+                        // console.log('data', data);
+                        var result = data;
+                        if (result.success == true) {
+
+                            $("#game_form").css("display", "none");
+                            $("#game_final").css("display", "block");
+                            $("#game_final_lazybag").on("click", function () { location.href = "lazy.html" });
+                            //$("#game_final_share").on("click", function(){window.open("https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent("https://www.hpa2021wddevent.com.tw"), "_blank")});
+                            $("#game_final_share").on("click", function () {
+                                var shareUrl = 'https://www.hpa2021wddevent.com.tw/?utm_source=share';
+                                // let shareUrl = 'https://tpe.sales-frontier.com/test/sugar_game/index.html'
+                                // window.navigator.clipboard.writeText(window.location.href);
+                                var isIE = checkIsIEBrowser();
+                                if (isIE) {
+                                    alert('IE瀏覽器不支援該功能。')
+                                    return;
+                                }
+                                window.navigator.clipboard.writeText(shareUrl).then(function () {
+                                    alert("網址已複製！");
+                                }).catch(function (err) {
+                                    console.log('無法複製');
+                                })
+                            });
+                        }
+                    }
+                });
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>
