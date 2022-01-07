@@ -2,9 +2,5 @@
 
 https://chan9988.github.io/2022ChiayiCounty_healthgame/
 
-## 說明
-
-## 進度
-
 ## Reference:
 https://www.hpa2021wddevent.com.tw
