@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="2022ChiayiCountyHealthBureau">
+		<meta name="author" content="kj">
+		<title>2022ChiayiCountyHealthBureau</title>
+		<link rel="stylesheet" href="style.css">
+
+        <script>
+            function roll_dice(){
+                var num=Math.floor(Math.random()*6+1);
+                document.getElementById("shownumber").innerHTML=num;
+            }
+        </script>
+
+	</head>
+	<body>
+		<header>
+			<img src="111mainview.jpeg" width="100%">
+			<table style="border:8px rgb(128, 87, 0) groove;" cellpadding="10" width="100%">
+				<tr>
+					<td align="center" valign="middle" style="background-color:limegreen"><a href="index.html" class="menu"> <font size="7" face="monospace"><b>遊戲作戰</b></font></a></td>
+					<td align="center" valign="middle" style="background-color:mediumturquoise"><a href="lazy.html" class="menu"> <font size="7" face="monospace"><b>懶人包</b></font></a></td>
+					<td align="center" valign="middle" style="background-color:darkorange"><a href="win.html" class="menu"> <font size="7" face="monospace"><b>中獎名單</b></font></a></td>
+				</tr>
+			</table>
+		</header>
+        
+        <p>This page is dice.html</p>
+        <p id="shownumber">-1</p>
+        <button type="button" onclick="roll_dice()">test</button>
+	</body>
+</html>
+    
