@@ -15,9 +15,13 @@
 
             async function roll_dice(){
                 var loop=20;
+                var next_num=1;
                 while(loop--){
                     console.log(loop);
                     var num=Math.floor(Math.random()*6+1);
+                    if(num==next_num) num++;
+                    if(num>6) num=1;
+                    next_num=num;
                     if(num==1) document.getElementById("dice_pic").src="pic/dice1.png";
                     else if(num==2) document.getElementById("dice_pic").src="pic/dice2.png";
                     else if(num==3) document.getElementById("dice_pic").src="pic/dice3.png";
